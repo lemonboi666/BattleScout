@@ -1,0 +1,2 @@
+# BattleScout
+FTC Scouting app
