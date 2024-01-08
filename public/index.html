@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BattleScout</title>
     <!-- Add your existing stylesheets or other meta tags here -->
 </head>
+
 <body>
 
     <!-- Example styles for the sidebar layout -->
@@ -18,16 +20,24 @@
 
         #sidebar {
             width: 200px;
-            background-color: #333;
+            background-color: blue;
             padding: 10px;
             color: white;
             display: flex;
             flex-direction: column;
             align-items: center;
+            position: fixed;
+            left: 0;
+            top: 0;
+            bottom: 0;
         }
 
         #content {
             flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
             padding: 20px;
         }
 
@@ -59,34 +69,36 @@
         }
     </style>
 </head>
+
 <body>
 
-<!-- Sidebar -->
-<div id="sidebar">
-    <!-- Logo with link to index page -->
-    <a href="/" id="logo">
-        <img src="logo.png" alt="Your Logo">
-        Your Website Name
-    </a>
+    <!-- Sidebar -->
+    <div id="sidebar">
+        <!-- Logo with link to index page -->
+        <a href="/" id="logo">
+            <img src="logo.png" alt="Your Logo">
+            Your Website Name
+        </a>
 
-    <!-- Login link -->
-    <a href="login.html" id="login">Login</a>
-</div>
+        <!-- Login link -->
+        <a href="login.html" id="login">Login</a>
+    </div>
 
-<!-- Main content with forms and outputs -->
-<div>
-    <!-- Your existing forms and outputs go here -->
-    <form id="dataForm">
-        <label for="dataInput">Input Data:</label>
-        <input type="text" id="dataInput" name="dataInput">
-        <button type="submit">Submit</button>
-    </form>
+    <!-- Main content with forms and outputs -->
+    <div id="content">
+        <!-- Your existing forms and outputs go here -->
+        <form id="dataForm">
+            <label for="dataInput">Input Data:</label>
+            <input type="text" id="dataInput" name="dataInput">
+            <button type="submit">Submit</button>
+        </form>
 
-    <ul id="submittedData">
-        <!-- Display submitted data here -->
-    </ul>
-</div>
+        <ul id="submittedData">
+            <!-- Display submitted data here -->
+        </ul>
+    </div>
 
-<script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
+
 </html>
